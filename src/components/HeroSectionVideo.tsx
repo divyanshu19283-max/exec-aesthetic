@@ -31,7 +31,7 @@ export function HeroSectionVideo() {
           y: heroY,
           opacity: heroOpacity,
         }}
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 overflow-hidden"
       >
         <TacticalVideo
           src={droneData.hero.videoPath}
@@ -84,7 +84,7 @@ export function HeroSectionVideo() {
         style={{
           opacity:heroOpacity
         }}
-        className="relative z-30 min-h-screen px-8 md:px-20"
+        className="relative z-30 min-h-screen px-5 sm:px-8 md:px-20"
       >
 
 
@@ -127,7 +127,7 @@ export function HeroSectionVideo() {
 
 
         {/* CENTER TITLE */}
-        <div className="flex h-[75vh] items-center justify-center">
+        <div className="flex min-h-[70vh] items-center justify-center">
 
           <motion.div
             initial={{
@@ -145,7 +145,7 @@ export function HeroSectionVideo() {
             className="text-center"
           >
 
-            <h1 className="text-6xl font-black uppercase tracking-tight text-white md:text-8xl">
+            <h1 className="text-4xl font-black uppercase tracking-tight text-white sm:text-6xl md:text-8xl">
               Execute
               <span className="text-cyan-400">
                 {" "}Beyond
@@ -175,7 +175,7 @@ export function HeroSectionVideo() {
           initial={{opacity:0,x:-40}}
           animate={{opacity:1,x:0}}
           transition={{delay:1.5}}
-          className="absolute bottom-10 left-10 hidden rounded-3xl border border-cyan-400/20 bg-black/50 p-6 backdrop-blur-3xl xl:block"
+          className="absolute bottom-10 left-10 hidden rounded-3xl border border-cyan-400/20 bg-black/50 p-6 backdrop-blur-3xl hidden xl:block"
         >
 
           <p className="text-xs tracking-[.4em] text-cyan-300">
@@ -220,7 +220,7 @@ export function HeroSectionVideo() {
           initial={{opacity:0,x:40}}
           animate={{opacity:1,x:0}}
           transition={{delay:1.6}}
-          className="absolute bottom-10 right-10 hidden w-72 rounded-3xl border border-cyan-400/20 bg-black/50 p-6 backdrop-blur-3xl xl:block"
+          className="absolute bottom-10 right-10 hidden w-72 rounded-3xl border border-cyan-400/20 bg-black/50 p-6 backdrop-blur-3xl hidden xl:block"
         >
 
           <p className="text-xs tracking-[.4em] text-cyan-300">
